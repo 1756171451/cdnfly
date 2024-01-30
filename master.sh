@@ -220,7 +220,7 @@ else
 fi
 
 cd /opt/
-download "https://github.com/LoveesYe/cdnflydadao/raw/main/master/$tar_gz_name" "https://github.moeyy.xyz/https://github.com/LoveesYe/cdnflydadao/raw/main/master/$tar_gz_name" "$tar_gz_name"
+download "https://github.com/LoveesYe/cdnflydadao/raw/main/master/$tar_gz_name" "https://github.moeyy.xyz/https://raw.githubusercontent.com/LoveesYe/cdnflydadao/main/master/$tar_gz_name" "$tar_gz_name"
 
 tar xf $tar_gz_name
 rm -rf cdnfly
