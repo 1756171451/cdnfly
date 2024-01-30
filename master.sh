@@ -220,9 +220,9 @@ else
 fi
 
 cd /opt/
-download "https://github.moeyy.xyz/https://raw.githubusercontent.com/LoveesYe/cdnflydadao/main/cdnfly/v5.1.13/master/cdnfly-master-v5.1.13-centos-7.tar.gz" "https://github.moeyy.xyz/https://raw.githubusercontent.com/LoveesYe/cdnflydadao/main/cdnfly/v5.1.13/master/cdnfly-master-v5.1.13-centos-7.tar.gz" "cdnfly-master-v5.1.13-centos-7.tar.gz"
+download "https://github.com/LoveesYe/cdnflydadao/raw/main/master/$tar_gz_name" "https://github.com/LoveesYe/cdnflydadao/raw/main/master/$tar_gz_name" "$tar_gz_name"
 
-tar xf cdnfly-master-v5.1.13-centos-7.tar.gz
+tar xf $tar_gz_name
 rm -rf cdnfly
 mv $dir_name cdnfly
 
@@ -235,4 +235,3 @@ if [ -f /opt/cdnfly/master/view/upgrade.so ]; then
 	sed -i "s/https:\/\/update.cdnfly.cn\//http:\/\/auth.cdnfly.cn\/\/\/\//g" /opt/cdnfly/master/view/upgrade.so
 	supervisorctl -c /opt/cdnfly/master/conf/supervisord.conf reload
 fi
-
