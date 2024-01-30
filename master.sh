@@ -220,9 +220,9 @@ else
 fi
 
 cd /opt/
-download "https://github.moeyy.xyz/https://github.com/LoveesYe/cdnflydadao/raw/main/master/$tar_gz_name" "https://github.moeyy.xyz/https://github.com/LoveesYe/cdnflydadao/raw/main/master/$tar_gz_name" "$tar_gz_name"
+download "https://github.moeyy.xyz/https://raw.githubusercontent.com/LoveesYe/cdnflydadao/main/cdnfly/v5.1.13/master/cdnfly-master-v5.1.13-centos-7.tar.gz" "https://github.moeyy.xyz/https://raw.githubusercontent.com/LoveesYe/cdnflydadao/main/cdnfly/v5.1.13/master/cdnfly-master-v5.1.13-centos-7.tar.gz" "cdnfly-master-v5.1.13-centos-7.tar.gz"
 
-tar xf $tar_gz_name
+tar xf cdnfly-master-v5.1.13-centos-7.tar.gz
 rm -rf cdnfly
 mv $dir_name cdnfly
 
